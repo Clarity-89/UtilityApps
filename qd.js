@@ -12,8 +12,9 @@ window.onload = function () {
             solution = document.getElementById("solution"),
             solution2 = document.getElementById("solution2"),
             x, dis = (b * b) - (4 * a * c), x1, x2;
-
-        if (a===0 && b===0){
+        if (b<4*a*c){
+            solution.innerHTML = "The solution is not a real number!"
+        } else if (a===0 && b===0){
           solution.innerHTML = "Both a and b cannot be 0!";
         }
         else if (a===0 && b!==0){
