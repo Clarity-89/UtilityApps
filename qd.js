@@ -6,13 +6,13 @@ window.onload = function () {
 
     function solveQuadratic() {
         document.getElementById("solution").innerHTML = null;
-        var a = parseInt(document.getElementById("a").value, 10);
-        var b = parseInt(document.getElementById("b").value, 10);
-        var c = parseInt(document.getElementById("c").value, 10),
+        var a = parseInt(document.getElementById("a").value, 10),
+        b = parseInt(document.getElementById("b").value, 10),
+        c = parseInt(document.getElementById("c").value, 10),
             solution = document.getElementById("solution"),
+            solution2 = document.getElementById("solution2"),
             x, dis = (b * b) - (4 * a * c), x1, x2;
-        console.log(a);
-        console.log(b);
+
         if (a===0 && b===0){
           solution.innerHTML = "Both a and b cannot be 0!";
         }
@@ -30,7 +30,8 @@ window.onload = function () {
         } else {
             x1 = (-b+Math.sqrt(dis))/(2*a);
             x2 = (-b-Math.sqrt(dis))/(2*a);
-            solution.innerHTML = "x1 = "+x1 + " x2 = "+x2;
+            solution.innerHTML = "x1 = "+x1;
+            solution2.innerHTML = " x2 = "+x2;
 
         }
 
