@@ -2,31 +2,48 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Quadratic Equation Solver</title>
-    <link rel="style" href="style.css" type="text/css">
-    <script src="qd.js"></script>
-
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-<h2>Quadratic equation has a form:</h2>
-
-<p>ax<sup>2</sup> + bx + c = 0</p>
-
-<p>Enter the values of a, b and c in the boxes below and press <b>Calculate</b> to get the solution</p>
-<tr>
-
-    <p>a=<input type="text" size="5" id="a" value="0"></p>
-
-    <p>b=<input type="text" size="5" id="b" value="0"></p>
-
-    <p>c=<input type="text" size="5" id="c" value="0"></p>
-    <br>
-    <p id="solution"></p>
-    <p id="solution2"></p>
-    <input type="button" value="Calculate" id="calc" class="button">
+<div class="container">
+    <div class="center-block">
 
 
-</tr>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-8">
+        <h2>Quadratic equation has a form:</h2>
+
+        <h2 id="formula">ax<sup>2</sup> + bx + c = 0</h2>
+
+        <p>Enter the values of a, b and c in the boxes below and press <b>Calculate</b> to get the solution</p>
+
+        <p><b>Note:</b> this solver gives a solution even if a = 0 (which makes the equation non-quadratic) </p>
+
+
+        <div class="row">
+            <div class="col-xs-2"><label for="a">a=</label><input type="text" size="5" id="a" value="0"></div>
+
+            <div class="col-xs-2"><label for="b">b=</label><input type="text" size="5" id="b" value="0"></div>
+
+            <div class="col-xs-2"><label for="c">c=</label><input type="text" size="5" id="c" value="0"></div>
+    </div>
+
+        <br>
+
+        <div id="solution"></div>
+
+        <div id="solution2"></div>
+        <input type="button" class="btn btn-success" value="Calculate" id="calc">
+
+    </div>
+
+</div>
+
+<script src="qd.js"></script>
 
 </body>
 </html>
