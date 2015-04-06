@@ -1,14 +1,17 @@
 body {
-background-image: url("equations.jpg");
-
-
+    background-image: url("equations.jpg");
 
 }
+
 .container {
-background-color: rgba(232, 232, 232, 0.96);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 30px;
+    background-color: rgba(232, 232, 232, 0.96);
     border-radius: 15px;
-    border:10px solid #d3d0ca;
+    border: 10px solid #d3d0ca;
 }
+
 .col-xs-2 {
     border-radius: 15px;
 }
