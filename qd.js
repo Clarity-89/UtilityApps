@@ -2,8 +2,6 @@
  * Created by Alex on 5/4/15.
  */
 window.onload = function () {
-
-
     function solveQuadratic() {
         var a = parseInt(document.getElementById("a").value, 10),
             b = parseInt(document.getElementById("b").value, 10),
@@ -17,7 +15,6 @@ window.onload = function () {
         if ((b * b) < 4 * a * c) {
             solution.className = "alert alert-danger";
             solution.innerHTML = "<strong>The solution is not a real number!</strong>"
-
         } else if (a === 0 && b === 0) {
             solution.className = "alert alert-danger";
             solution.innerHTML = "<strong>Both a and b cannot be 0!</strong>";
@@ -43,11 +40,7 @@ window.onload = function () {
             solution.innerHTML = "<strong> x1 = " + x1 + "</strong>";
             solution2.className = "alert alert-success";
             solution2.innerHTML = "<strong> x2 = " + x2 + "</strong>";
-
         }
-
     }
-
     document.getElementById("calc").onclick = solveQuadratic;
-
 };

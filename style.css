@@ -1,8 +1,6 @@
 body {
     background-image: url("http://elestadista.com.ar/wp-content/uploads/formula.jpg");
-
 }
-
 .container {
     padding-top: 15px;
     padding-bottom: 15px;
@@ -11,7 +9,6 @@ body {
     border-radius: 15px;
     border: 10px solid #d3d0ca;
 }
-
 .col-xs-2 {
     border-radius: 15px;
 }
