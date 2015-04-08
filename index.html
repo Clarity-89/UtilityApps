@@ -7,30 +7,59 @@
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link href='http://fonts.googleapis.com/css?family=Alice' rel='stylesheet' type='text/css'>
 </head>
 <body>
-<div class="container">
-    <div class="col-xs-12 col-sm-6 col-md-8">
-        <h2>Quadratic equation has a form:</h2>
 
-        <h2 id="formula">ax<sup>2</sup> + bx + c = 0</h2>
+<div class="container" id="cont">
+    <div class="row">
+        <div class="col-md-12 text-center lead"><h1><strong>Quadratic equation solver</strong></h1></div>
+    </div>
+    <div class="row">
+        <div class="col-md-7">
 
-        <p>Enter the values of a, b and c in the boxes below and press <b>Calculate</b> to get the solution</p>
+            <h3>Quadratic equation has a following form:</h3>
 
-        <p><b>Note:</b> this solver gives a solution even if a = 0 (which makes the equation non-quadratic) </p>
+            <h2 id="formula">ax<sup>2</sup> + bx + c = 0</h2>
 
-        <div class="row">
-            <div class="col-xs-2"><label for="a">a=</label><input type="text" size="5" id="a" value="0"></div>
-            <div class="col-xs-2"><label for="b">b=</label><input type="text" size="5" id="b" value="0"></div>
-            <div class="col-xs-2"><label for="c">c=</label><input type="text" size="5" id="c" value="0"></div>
+            <h4>where <strong>x</strong> is an unknown and <strong>a, b</strong> and <strong>c</strong> are known
+                numbers.</h4>
+
+            <p>Enter the values of <strong>a, b</strong> and <strong>c</strong> in the boxes below and press <b>Calculate</b>
+                to get the solution.</p>
+            <br>
+
+            <div id="forms"><label for="a">a=</label><input type="text" size="5" id="a" value="0">
+                <label for="b">b=</label><input type="text" size="5" id="b" value="0">
+                <label for="c">c=</label><input type="text" size="5" id="c" value="0"></div>
+
+
+            <div id="solution"></div>
+            <div id="solution2"></div>
+
+            <input type="button" class="btn btn-success" value="Calculate" id="calc">
+
         </div>
-        <br>
+        <div class="col-md-5"><h3>How it works:</h3>
 
-        <div id="solution"></div>
-        <div id="solution2"></div>
-        <input type="button" class="btn btn-success" value="Calculate" id="calc">
+            <p>This calculator uses <a href="http://en.wikipedia.org/wiki/Quadratic_formula">quadratic formula</a>
+                to solve the equation. <br> It produces a solution even if <strong class="text-danger">a = 0</strong>,
+                which makes the equation non-quadratic.
+                However for the equation to be solvable <strong class="text-danger">both a and b cannot be
+                    0.</strong><br>
+                The calculator produces only the solutions which are <a href="http://en.wikipedia.org/wiki/Real_number">real
+                    numbers</a>.
+                If the solutions are <a href="http://en.wikipedia.org/wiki/Imaginary_number">imaginary numbers</a> a
+                corresponding message will appear.</p>
+
+            <p>More info about quadratic equations can be found on <a
+                    href="http://en.wikipedia.org/wiki/Quadratic_equation">Wikipedia</a>.</p>
+        </div>
     </div>
 </div>
+
+
+
 <script src="qd.js"></script>
 </body>
 </html>
