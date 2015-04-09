@@ -22,13 +22,14 @@ body {
 }
 
 #formula {
-    margin-left: 150px;
+    margin-left: 20%;
     margin-bottom: 20px;
 }
 
 #forms {
     margin-top: 10px;
     margin-bottom: 20px;
+    margin-left: 5%;
 }
 
 #calc {
