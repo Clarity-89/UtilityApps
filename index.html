@@ -13,21 +13,21 @@
 
 <div class="container" id="cont">
     <div class="row">
-        <div class="col-md-12 text-center lead"><h1><strong>Quadratic equation solver</strong></h1></div>
+        <div class="col-md-12 text-center lead"><h1><strong>Quadratic Equation Solver</strong></h1></div>
     </div>
     <div class="row">
         <div class="col-md-7">
 
-            <h3>Quadratic equation has a following form:</h3>
+            <h3 class="pad">Quadratic equation has a following form:</h3>
 
             <h2 id="formula">ax<sup>2</sup> + bx + c = 0</h2>
 
-            <h4>where <strong>x</strong> is an unknown and <strong>a, b</strong> and <strong>c</strong> are known
+            <h4 class="pad">where <strong>x</strong> is an unknown and <strong>a, b</strong> and <strong>c</strong> are
+                known
                 numbers.</h4>
 
-            <p>Enter the values of <strong>a, b</strong> and <strong>c</strong> in the boxes below and press <b>Calculate</b>
-                to get the solution.</p>
-            <br>
+            <p>Enter the values of <strong>a, b</strong> and <strong>c</strong> in the boxes below and press <strong>Calculate</strong>
+                or <strong>Enter</strong> on your keyboard to get the solution.</p>
 
             <div id="forms"><label for="a">a=</label><input type="text" size="5" id="a" value="0">
                 <label for="b">b=</label><input type="text" size="5" id="b" value="0">
@@ -44,7 +44,7 @@
 
             <p>This calculator uses <a href="http://en.wikipedia.org/wiki/Quadratic_formula">quadratic formula</a>
                 to solve the equation. <br> It produces a solution even if <strong class="text-danger">a = 0</strong>,
-                which makes the equation non-quadratic.<br>
+                in which case the equation is non-quadratic.<br>
                 However for the equation to be solvable <strong class="text-danger">both a and b cannot be
                     0.</strong><br>
                 The calculator produces only the solutions which are <a href="http://en.wikipedia.org/wiki/Real_number">real
@@ -57,8 +57,12 @@
         </div>
     </div>
 </div>
-
-
+<div id="footer">
+    <div id="foot">Quadratic Equation Solver is powered by <a href="http://getbootstrap.com">Bootstrap</a> and
+        JavaScript.
+        View the source code on <a href="https://github.com/Clarity-89/UtilityApps">Github</a>.
+    </div>
+</div>
 
 <script src="qd.js"></script>
 </body>
